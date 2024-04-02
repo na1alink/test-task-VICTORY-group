@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1440px) {
   .hero__rigth {
     max-width: 530px;
@@ -17,8 +24,13 @@
   }
 
   .card__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
@@ -36,15 +48,27 @@
   }
 
   .specialists__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 50px;
   }
 
   .specialists__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     min-height: 100%;
     height: 100%;
@@ -61,7 +85,12 @@
     padding: 50px 60px;
   }
   .clinic__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     background-size: 550px;
     background-position: bottom;
@@ -78,7 +107,12 @@
     position: relative;
     letter-spacing: -1.5px;
     max-width: 460px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
     margin-left: 0px;
@@ -98,6 +132,8 @@
   }
 
   .principles__content {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     max-width: 100%;
   }
@@ -111,6 +147,9 @@
   }
 
   .reviews__header-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -118,12 +157,19 @@
     margin-bottom: 20px;
   }
   .reviews__header-mobContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
   }
   .licenses__container {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
   .licenses__image,
@@ -170,6 +216,8 @@
   }
 
   .licenses__content-contacts {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -180,8 +228,15 @@
 
   .footer__bottom {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-image: url(../img/footerMap.png);
     background-repeat: no-repeat;
@@ -216,6 +271,8 @@
     left: 50%;
     width: 30px;
     height: 2px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: var(--color-black);
     border-radius: 5px;
@@ -227,6 +284,8 @@
 
   .burger__line:nth-child(2) {
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
 
@@ -256,11 +315,18 @@
     padding-top: 80px;
   }
   .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
   .hero__left {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .hero__left-card {
@@ -271,11 +337,17 @@
     bottom: 242px;
     right: 210px;
 
+    -webkit-box-shadow: none;
+
     box-shadow: none;
     background: transparent;
     padding: 10px 20px;
     gap: 5px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 0;
     z-index: 1;
@@ -321,6 +393,9 @@
     font-size: 26px;
     color: #fff;
 
+    -webkit-box-shadow: inset 0 0 27px 4px rgba(255, 255, 255, 0.46),
+      00 15px 59px 0 rgba(0, 0, 0, 0.08);
+
     box-shadow: inset 0 0 27px 4px rgba(255, 255, 255, 0.46),
       00 15px 59px 0 rgba(0, 0, 0, 0.08);
     background-color: #e21f4d;
@@ -336,10 +411,17 @@
   }
 
   .footer__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
   .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-image: none;
 
@@ -350,6 +432,8 @@
     display: none;
   }
   .footer__right {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
   .footer__working,
@@ -363,14 +447,23 @@
   }
 
   .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 460px;
     width: 100%;
   }
 
   .footer__menu-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .footer__menu-number {
@@ -394,10 +487,18 @@
   }
 
   .footer__menu-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 }
@@ -485,6 +586,9 @@
   }
 
   .specialists__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
